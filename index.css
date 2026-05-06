@@ -1,0 +1,106 @@
+/* ============================================================
+   Kisan Saathi — Design System (CSS only)
+   All colors are HSL semantic tokens used by Tailwind classes.
+   No component-level color overrides — change theme HERE.
+   ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ---- Page surfaces ---- */
+    --background: 45 38% 97%;          /* warm cream */
+    --foreground: 110 25% 12%;          /* deep leaf-text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 110 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 110 25% 12%;
+
+    /* ---- Brand: leaf green ---- */
+    --primary: 134 55% 28%;
+    --primary-foreground: 45 38% 97%;
+    --primary-glow: 120 50% 45%;
+
+    /* ---- Wheat / earth ---- */
+    --secondary: 38 60% 92%;
+    --secondary-foreground: 28 50% 22%;
+
+    --muted: 45 25% 93%;
+    --muted-foreground: 110 10% 38%;
+
+    /* ---- Saffron accent ---- */
+    --accent: 28 88% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 45 20% 86%;
+    --input: 45 20% 88%;
+    --ring: 134 55% 28%;
+
+    --radius: 0.85rem;
+
+    /* ---- Reusable gradients & shadows ---- */
+    --gradient-hero: linear-gradient(135deg, hsl(134 55% 28%) 0%, hsl(120 50% 45%) 60%, hsl(28 88% 55%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(45 38% 97%) 0%, hsl(38 60% 94%) 100%);
+    --shadow-soft: 0 4px 20px -4px hsl(134 55% 28% / 0.15);
+    --shadow-elegant: 0 12px 40px -12px hsl(134 55% 28% / 0.35);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* ---- Sidebar (shadcn defaults) ---- */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* ---------- Dark mode overrides ---------- */
+  .dark {
+    --background: 110 15% 8%;
+    --foreground: 45 38% 95%;
+    --card: 110 15% 11%;
+    --card-foreground: 45 38% 95%;
+    --popover: 110 15% 11%;
+    --popover-foreground: 45 38% 95%;
+    --primary: 120 50% 50%;
+    --primary-foreground: 110 15% 8%;
+    --secondary: 110 12% 18%;
+    --secondary-foreground: 45 38% 95%;
+    --muted: 110 12% 16%;
+    --muted-foreground: 45 15% 65%;
+    --accent: 28 88% 60%;
+    --accent-foreground: 110 15% 8%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 110 12% 20%;
+    --input: 110 12% 20%;
+    --ring: 120 50% 50%;
+  }
+}
+
+/* Apply tokens globally */
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+/* Custom utility classes used throughout the UI */
+@layer utilities {
+  .gradient-hero      { background: var(--gradient-hero); }
+  .gradient-soft      { background: var(--gradient-soft); }
+  .shadow-soft        { box-shadow: var(--shadow-soft); }
+  .shadow-elegant     { box-shadow: var(--shadow-elegant); }
+  .transition-smooth  { transition: var(--transition-smooth); }
+}
