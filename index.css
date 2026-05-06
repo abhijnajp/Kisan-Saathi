@@ -10,7 +10,7 @@
 
 @layer base {
   :root {
-    /* ---- Page surfaces ---- */
+    
     --background: 45 38% 97%;          /* warm cream */
     --foreground: 110 25% 12%;          /* deep leaf-text */
 
