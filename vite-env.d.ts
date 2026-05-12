@@ -1,5 +1,2 @@
 /// <reference types="vite/client" />
-VITE_SUPABASE_PROJECT_ID="ysqduqurkczstviuxmfj"
-VITE_SUPABASE_PUBLISHABLE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlzcWR1cXVya2N6c3R2aXV4bWZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc5NTkxOTUsImV4cCI6MjA5MzUzNTE5NX0.Mvv4bh38wd1drN8JTIDQnlDpMiuJPl8QM74u-yM5l34"
-VITE_SUPABASE_URL="https://ysqduqurkczstviuxmfj.supabase.co"
-VITE_GEMINI_API_KEY="AIzaSyB9doskAiNCQin3_Ut3siklBa_qPL7bsks "
+
